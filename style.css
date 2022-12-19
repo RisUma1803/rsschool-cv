@@ -1,11 +1,11 @@
 @font-face {
-  font-family: MonoRegular;
-  src: url(assets/fonts/ChivoMono-Regular.ttf);
+  font-family: CaveatReg;
+  src: url(assets/fonts/Caveat-Regular.ttf);
 }
 
 @font-face {
-  font-family: MonoBold;
-  src: url(assets/fonts/ChivoMono-Bold.ttf);
+  font-family: CaveatBold;
+  src: url(assets/fonts/Caveat-Bold.ttf);
 }
 
 
@@ -25,7 +25,7 @@ body {
   justify-content: space-between;
   line-height: 1.5;
   color: #4d2323;
-  font-family: ChivoMono;
+  font-family: CaveatReg;
 }
 
 a {
@@ -62,7 +62,7 @@ html {
 
 .nav-item a {
   color: #829985;
-  font-family: ChivoMono;
+  font-family: CaveatReg;
   text-decoration: none;  
   transition: color 0.5s;
 }
@@ -118,13 +118,16 @@ html {
 #profile .profile__name .section-title {
   padding-bottom: 20px;
   border-bottom: 1px solid grey;
-  font-size: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 #profile .profile__name .position {
   text-transform: uppercase;
   text-align: center;
   font-weight: bolder;
+  font-size: 25px;
 }
 
 #contacts .section-list {
@@ -187,7 +190,7 @@ html {
 
 .footer a {
   color: white;
-  font-family: ComicRegular;
+  font-family: CaveatBold;
 }
 
 .footer .container {
@@ -207,7 +210,6 @@ html {
   height: 45px;
   background-image: url(assets/svg/logo.jpg);
   background-size: contain;
-  margin-left: 1000px;
   background-repeat: no-repeat;
 }
 
