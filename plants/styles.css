@@ -44,7 +44,8 @@ header {
 }
 
 .logo {
-  width: 50%;
+  /* width: 50%; */
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
   padding-left: 6rem;
@@ -60,7 +61,8 @@ h5 {
 }
 
 .container {
-  width: 50%;
+  /* width: 50%; */
+  flex-grow: 1;
   display: flex;
   align-items: center;
 }
@@ -199,7 +201,7 @@ p {
 .service__init__button {
   width: 40%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   display: flex;
 }
 
@@ -233,10 +235,13 @@ p {
   display: flex;
   width: 30%;
   flex-direction: column;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
 }
 
 .service__projects__item h4 {
   text-align: center;
+  columns: #e06733;
 }
 
 .service__projects__item p {
@@ -402,4 +407,194 @@ footer {
 .footer__links ul li{
     list-style: none;
     margin-left: 2rem;
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    flex-grow: 1;
+  }
+
+  .container {
+    flex-grow: 3;
+  }
+
+  .welcome {
+    flex-direction: row-reverse;
+    padding: 60px 30px ;
+  }
+
+
+
+  .welcome__content h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .welcome__content p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  
+  .welcome__leafs {
+    width: 50%;
+  }
+
+  .welcome__leafs img {
+    width: 90%;
+  }
+
+
+
+
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__text {
+    width: auto;
+  }
+
+  .about__text h2 {
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    font-weight: 400;
+    padding: 0 30px;
+  }
+
+  .about__text p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .about__houseplant1 img {
+    width: 50%;
+  }
+
+
+
+  
+
+.service__init {
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.service__init__title {
+  margin-bottom: 2rem;
+  font-size: 35px;
+  line-height: 46px;
+  width: 45%;
+}
+
+.service__init__button {
+  justify-content: space-between;
+  width: 500px;
+}
+
+
+  .service__projects__item {
+    width: 280px;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .service__projects__item h4 {
+    font-weight: 700;
+    color: #E06733;
+    font-family: Inter;
+    line-height: 20px;
+  }
+
+  .service__projects__item p {
+    font-family: Inter;
+  }
+  
+
+
+
+
+
+
+
+  .price {
+    padding: 50px;
+  }
+
+  .price__type h2 {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .price__help {
+    margin-top: 8rem;
+
+  }
+
+  .price__help h2 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 700;
+    padding-left: 0;    
+  }
+
+
+
+
+
+  .contacts h2 {
+    margin-bottom: 6rem;
+  }
+
+  .contacts__container {
+    flex-direction: column-reverse;
+  }
+
+  .contacts__image {
+    margin-top: 15rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contacts__image img {
+    width: 54%;
+  }
+
+  .contacts__city {
+    padding-left: 4rem;
+  }
+
+
+  
+
+  footer {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .footer__copyright-github {
+    padding-left: 2rem;
+  }
+
+  .footer__title {
+    padding-right: 2rem;
+  }
+
+  .footer__links {
+    padding-right: 3rem;
+  }
 }
